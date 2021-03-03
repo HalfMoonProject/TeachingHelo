@@ -5,8 +5,17 @@
 3. Start een nieuw project en werk de oef uit
 
 OEFENING
+<br>
+PACKAGE DOMEIN:
+<br>
 ![domein](domein.PNG)
+<br>
+PACKAGE UI
+<br>
 ![ui](ui.PNG)
+<br>
+OUTPUT APP
+<br>
 ![uitvoer](uitvoer.PNG)
 
 ALS JE KLAAR BENT SLA JE ALLES OP IN ECLIPSE
