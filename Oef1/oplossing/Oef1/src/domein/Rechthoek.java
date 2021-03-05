@@ -1,0 +1,44 @@
+package domein;
+
+public class Rechthoek {
+	private int breedte;
+	private int lengte;
+
+	public Rechthoek(int breedte, int lengte) {
+		this.breedte = breedte;
+		this.lengte = lengte;
+
+	}
+
+	public int setBreedte(int breedte) {
+		if (breedte < 0 || breedte > 20) {
+			breedte = 1;
+		}
+		return breedte;
+	}
+
+	public int setLengte(int lengte) {
+		if (lengte < 0 || lengte > 20) {
+			lengte = 1;
+		}
+		return lengte;
+	}
+
+	public int getBreedte() {
+		return breedte;
+	}
+
+	public int getLengte() {
+		return lengte;
+	}
+
+	public int berekenOmtrek(int lengte, int breedte) {
+		return 2 * (lengte + breedte);
+	}
+
+	public int berekenOppervlakte(int lengte, int breedte) {
+		return lengte * breedte;
+
+	}
+
+}

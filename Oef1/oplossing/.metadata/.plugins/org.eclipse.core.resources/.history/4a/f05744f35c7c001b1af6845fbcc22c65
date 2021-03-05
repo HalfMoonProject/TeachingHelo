@@ -1,0 +1,35 @@
+package ui;
+
+import java.util.Scanner;
+
+import domein.Rechthoek;
+
+public class RechthoekApplicatie {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		int lengte = 0;
+		int breedte = 0;
+		int oppervlakte = 0;
+		int omtrek = 0;
+		Rechthoek r = new Rechthoek (lengte,breedte);
+		
+		System.out.println("Geef de lengte van uw rechthoek: ");
+		r.setLengte(s.nextInt());
+		System.out.println("Geef de breedte van uw rechthoek: ");
+		r.setBreedte(s.nextInt());
+		
+		lengte = r.getLengte();
+		breedte = r.getBreedte();
+		omtrek = r.berekenOmtrek(lengte, breedte);
+		oppervlakte = r.berekenOppervlakte(lengte, breedte);
+	}
+	system.out.println("lengte:" + lengte);
+	system.out.println("breedte:" + breedte);
+	system.out.println("omtrek:" + omtrek);
+	system.out.println("oppervlakte:" + oppervlakte);
+
+	}
+
+}
